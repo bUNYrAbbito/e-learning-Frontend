@@ -1,0 +1,79 @@
+:root {
+  --primary-color: #8a4baf;
+  --primary-hover: #7d3fa0;
+  --primary-dark: #5f357e;
+  --text-light: #ffffff;
+  --transition-speed: 0.3s;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+* {
+  cursor: pointer;
+}
+
+.common-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-speed) ease;
+  margin-top: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  
+  &:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  &:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (max-width: 768px) {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Additional attractive elements for e-learning platform */
+.course-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.progress-bar {
+  height: 8px;
+  border-radius: 4px;
+  background: linear-gradient(90deg, var(--primary-color), var(--primary-hover));
+  transition: width 0.5s ease;
+}
+
+/* Modern focus styles */
+button:focus, a:focus, input:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}

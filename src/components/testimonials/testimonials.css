@@ -1,0 +1,68 @@
+/* Section styling */
+.testimonials {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+.testimonials h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Styling for the testimonial cards container */
+.testmonials-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+/* Individual testimonial card */
+.testimonial-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 350px;
+  text-align: center;
+}
+
+.student-image img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.message {
+  font-size: 1rem;
+  color: #555;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.info {
+  margin-top: 10px;
+}
+
+.name {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.position {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+/* Hover effect for testimonial cards */
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}

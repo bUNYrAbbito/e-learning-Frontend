@@ -1,0 +1,121 @@
+/* General Styles */
+.lecture-page {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+
+.left {
+  flex: 2;
+  padding: 10px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+}
+
+.right {
+  flex: 1;
+  padding: 10px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+}
+
+.progress {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+button.common-btn {
+  background-color: #8a4baf;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+button.common-btn:hover {
+  background-color: #6b3992;
+}
+
+button.common-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Add Lecture Form */
+.lecture-form {
+  margin-top: 20px;
+}
+
+.lecture-form input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.lecture-form input[type="file"] {
+  padding: 5px;
+}
+
+.lecture-form video {
+  margin-top: 15px;
+  max-width: 100%;
+  border-radius: 6px;
+}
+
+/* Lectures List */
+.lecture-number {
+  background-color: #fff;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.lecture-number:hover {
+  background-color: #f1f1f1;
+}
+
+.lecture-number.active {
+  background-color: #8a4baf;
+  color: white;
+}
+
+.lecture-number .active {
+  font-weight: bold;
+}
+
+.lecture-number .active span {
+  background: #f07a00;
+}
+
+/* Delete Button */
+button.common-btn.red {
+  background-color: red;
+}
+
+button.common-btn.red:hover {
+  background-color: darkred;
+}
+
+/* Small Screen Adjustments */
+@media (max-width: 768px) {
+  .lecture-page {
+    flex-direction: column;
+  }
+
+  .left {
+    margin-bottom: 20px;
+  }
+
+  .right {
+    margin-top: 20px;
+  }
+}

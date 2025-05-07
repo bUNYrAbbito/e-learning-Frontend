@@ -1,0 +1,78 @@
+/* Course Card Styles */
+.course-card {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.course-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.course-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-top: 1rem;
+}
+
+p {
+  font-size: 1rem;
+  color: #555;
+  margin: 0.5rem 0;
+}
+
+.common-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.common-btn:hover {
+  background-color: #0056b3;
+}
+
+button:disabled {
+  background-color: #e0e0e0;
+  cursor: not-allowed;
+}
+
+button[style="background: red"] {
+  background-color: red;
+}
+
+button[style="background: red"]:hover {
+  background-color: darkred;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .course-card {
+    margin: 1rem 0.5rem;
+    padding: 1rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+}

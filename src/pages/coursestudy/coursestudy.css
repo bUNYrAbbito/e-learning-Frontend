@@ -1,0 +1,44 @@
+.course-study-page {
+  padding: 60px 20px;
+  background: linear-gradient(to bottom right, #f8f4fc, #ffffff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 80vh;
+
+  h2, h4, h5 {
+    color: #8a4baf;
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h4 {
+    font-size: 24px;
+  }
+
+  h5 {
+    font-size: 20px;
+  }
+
+  a {
+    text-decoration: none;
+    background-color: #8a4baf;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+
+    &:hover {
+      background-color: #722ea5;
+      transform: translateY(-2px);
+    }
+  }
+}
